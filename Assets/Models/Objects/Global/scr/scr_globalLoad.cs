@@ -1,0 +1,17 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class scr_globalLoad : MonoBehaviour {
+
+	// Use this for initialization
+	[RuntimeInitializeOnLoadMethod]
+	void Start () {
+		GameObject sum_globinit = Resources.Load<GameObject> ("Objects/objGlobal");
+		if (FindObjectOfType<scr_gameInit>() == null) { 
+			GameObject.Instantiate (sum_globinit); 
+		}
+		scr_manageData._f.LoadLevel ();
+		Destroy (gameObject);
+	}
+}

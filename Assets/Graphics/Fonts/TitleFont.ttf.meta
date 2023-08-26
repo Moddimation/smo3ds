@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 44822094a291f364988eec99f4c97909
+timeCreated: 1680518589
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 64
+  forceTextureCase: 0
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: TitleFont
+  fontNames:
+  - TitleFont
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 114f42ca58e6c88419f4954f7edec7b1, type: 3}
+  customCharacters: 
+  fontRenderingMode: 3
+  ascentCalculationMode: 0
+  useLegacyBoundsCalculation: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

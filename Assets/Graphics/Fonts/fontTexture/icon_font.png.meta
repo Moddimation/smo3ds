@@ -1,0 +1,764 @@
+fileFormatVersion: 2
+guid: 8b1ecaa1201d3d743ac5af0a6b1d901e
+timeCreated: 1680466608
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: icon_font_0
+    21300002: icon_font_1
+    21300004: icon_font_2
+    21300006: icon_font_3
+    21300008: icon_font_4
+    21300010: icon_font_5
+    21300012: icon_font_6
+    21300014: icon_font_7
+    21300016: icon_font_8
+    21300018: icon_font_9
+    21300020: icon_font_10
+    21300022: icon_font_11
+    21300024: icon_font_12
+    21300026: icon_font_13
+    21300028: icon_font_14
+    21300030: icon_font_15
+    21300032: icon_font_16
+    21300034: icon_font_17
+    21300036: icon_font_18
+    21300038: icon_font_19
+    21300040: icon_font_20
+    21300042: icon_font_21
+    21300044: icon_font_22
+    21300046: icon_font_23
+    21300048: icon_font_24
+    21300050: icon_font_25
+    21300052: icon_font_26
+    21300054: icon_font_27
+    21300056: icon_font_28
+    21300058: icon_font_29
+    21300060: icon_font_30
+    21300062: icon_font_31
+    21300064: icon_font_32
+    21300066: icon_font_33
+    21300068: icon_font_34
+    21300070: icon_font_35
+    21300072: icon_font_36
+    21300074: icon_font_37
+    21300076: icon_font_38
+    21300078: icon_font_39
+    21300080: icon_font_40
+    21300082: icon_font_41
+    21300084: icon_font_42
+    21300086: icon_font_43
+    21300088: icon_font_44
+    21300090: icon_font_45
+    21300092: icon_font_46
+    21300094: icon_font_47
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Nintendo 3DS
+    maxTextureSize: 512
+    textureFormat: 61
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: icon_font_0
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 794
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_1
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 794
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_2
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 794
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_3
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 794
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_4
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 794
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_5
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 794
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 679
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_7
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 679
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_8
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 679
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_9
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 679
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_10
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 679
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_11
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 679
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_12
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 679
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_13
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 564
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_14
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 564
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_15
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 564
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_16
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 564
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_17
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 564
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_18
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 564
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_19
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 564
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_20
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 564
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 449
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_22
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 449
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_23
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 449
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_24
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 449
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_25
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 449
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_26
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 449
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_27
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 449
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_28
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 449
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_29
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 449
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_30
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 449
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 334
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_32
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 334
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_33
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 334
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_34
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 334
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_35
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 334
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_36
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 334
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_37
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 334
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_38
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 334
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_39
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 334
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_40
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 334
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 219
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_42
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 219
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_43
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 219
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_44
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 219
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_45
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 219
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_46
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 219
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: icon_font_47
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 219
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

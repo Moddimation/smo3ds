@@ -1,0 +1,133 @@
+fileFormatVersion: 2
+guid: 81b5d4cb8c515e04987c86d8fe5bec3e
+timeCreated: 1680538709
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: AAA1__ShelfBodyMT
+    100002: AllRoot
+    100004: Armature
+    100006: EmblemModel_Gold_low1__ShelfGoldMT
+    100008: Floor__CarpetMT00
+    100010: Floor__CarpetMT01
+    100012: //RootNode
+    100014: Mold__WallMT
+    100016: polySurface221__CurtainMT
+    100018: polySurface260__ShelfTopBodyMT
+    400000: AAA1__ShelfBodyMT
+    400002: AllRoot
+    400004: Armature
+    400006: EmblemModel_Gold_low1__ShelfGoldMT
+    400008: Floor__CarpetMT00
+    400010: Floor__CarpetMT01
+    400012: //RootNode
+    400014: Mold__WallMT
+    400016: polySurface221__CurtainMT
+    400018: polySurface260__ShelfTopBodyMT
+    2300000: AAA1__ShelfBodyMT
+    2300002: EmblemModel_Gold_low1__ShelfGoldMT
+    2300004: Floor__CarpetMT00
+    2300006: Floor__CarpetMT01
+    2300008: Mold__WallMT
+    2300010: polySurface221__CurtainMT
+    2300012: polySurface260__ShelfTopBodyMT
+    3300000: AAA1__ShelfBodyMT
+    3300002: EmblemModel_Gold_low1__ShelfGoldMT
+    3300004: Floor__CarpetMT00
+    3300006: Floor__CarpetMT01
+    3300008: Mold__WallMT
+    3300010: polySurface221__CurtainMT
+    3300012: polySurface260__ShelfTopBodyMT
+    4300000: AAA1__ShelfBodyMT
+    4300002: EmblemModel_Gold_low1__ShelfGoldMT
+    4300004: Floor__CarpetMT00
+    4300006: Floor__CarpetMT01
+    4300008: Mold__WallMT
+    4300010: polySurface221__CurtainMT
+    4300012: polySurface260__ShelfTopBodyMT
+    6400000: AAA1__ShelfBodyMT
+    6400002: EmblemModel_Gold_low1__ShelfGoldMT
+    6400004: Floor__CarpetMT00
+    6400006: Floor__CarpetMT01
+    6400008: Mold__WallMT
+    6400010: polySurface221__CurtainMT
+    6400012: polySurface260__ShelfTopBodyMT
+    9500000: //RootNode
+    13700000: AAA1__ShelfBodyMT
+    13700002: EmblemModel_Gold_low1__ShelfGoldMT
+    13700004: Floor__CarpetMT00
+    13700006: Floor__CarpetMT01
+    13700008: Mold__WallMT
+    13700010: polySurface221__CurtainMT
+    13700012: polySurface260__ShelfTopBodyMT
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.008
+    meshCompression: 3
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

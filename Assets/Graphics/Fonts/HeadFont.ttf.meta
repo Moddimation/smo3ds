@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3d49548f854ffc142bcae92350c686f9
+timeCreated: 1681252981
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 64
+  forceTextureCase: 0
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: HeadFont
+  fontNames:
+  - HeadFont
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 3
+  ascentCalculationMode: 0
+  useLegacyBoundsCalculation: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
