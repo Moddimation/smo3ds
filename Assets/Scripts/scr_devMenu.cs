@@ -213,10 +213,10 @@ public class scr_devMenu: MonoBehaviour {
 				DoPrint (5, "MOON: "+scr_main.s.moonsCount, 1, 50);
 			}
 #if !UNITY_EDITOR
-			if (deb_statsIsShowing){
-				DoPrint(1, "CPU: " + UnityEngine.N3DS.Debug.GetSystemFree(), 1, 50);
-				DoPrint(2, "RAM: A " + UnityEngine.N3DS.Debug.GetVRAMAFree() + ", B "+UnityEngine.N3DS.Debug.GetVRAMBFree(), 1, 50);
-			}
+		if (deb_statsIsShowing){
+			DoPrint(1, "Memory: " + UnityEngine.N3DS.Debug.GetSystemFree(), 1, 50);
+			DoPrint(2, "VRam A: " + UnityEngine.N3DS.Debug.GetVRAMAFree() + ", B: "+UnityEngine.N3DS.Debug.GetVRAMBFree(), 1, 50);
+		}
 #endif
 		}
 		if (deb_cmdIsShowing && txt_cmdOut != "")
