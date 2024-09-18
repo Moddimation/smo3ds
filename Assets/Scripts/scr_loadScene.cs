@@ -15,16 +15,13 @@ public class scr_loadScene : MonoBehaviour {
     void Start(){ s = this; }
 	public void StartScene(string sceneName, int transition = 0){
 		isDone = false;
-		string currentscn = SceneManager.GetActiveScene ().name;
-
-		//Scene scene = SceneManager.GetActiveScene();
 
 		//GetComponent<AudioListener>().enabled = true;
 		scr_main.s.hasLevelLoaded = false;
 		nextScene = sceneName;
 		scr_main.s.dbg_enemyCount = 0;
 
-        scr_main.DPrint ("nSCN: " + nextScene);
+        scr_main.DPrint ("nSCN: " + sceneName);
 		switch (transition) {
 		case 0: //direct, no transition
 			SceneManager.LoadScene (sceneName);
@@ -32,7 +29,6 @@ public class scr_loadScene : MonoBehaviour {
 		case 1: //flying ship line
 			scr_main.s.SetFocus(false);
 			SceneManager.LoadScene ("scn_loadShip");
-			nextScene = sceneName;
 				//wip
 			break;
 		case 2://cap fly transition
@@ -44,6 +40,7 @@ public class scr_loadScene : MonoBehaviour {
 		}
 	}
 	IEnumerator loadAsync(){
+		Scene oldScene = SceneManager.GetActiveScene();
 		loadOP = SceneManager.LoadSceneAsync (nextScene, LoadSceneMode.Additive);
 		loadOP.allowSceneActivation = false;
 		while (!loadOP.isDone) {
@@ -51,14 +48,7 @@ public class scr_loadScene : MonoBehaviour {
 			yield return null;
 		}
 		scr_main.DPrint ("loading: 100%");
-
-        // Makes sure that the scene is completely empty just in case the scene does not get unloaded at all
-        /*for (int i = 0; i < rootObjects.Count; ++i)
-        {
-            print(rootObjects[i]);
-            if (rootObjects[i].name != "objFader")
-                Destroy(rootObjects[i]);
-        }*/
+		SceneManager.UnloadSceneAsync(oldScene);
         isDone = true;
 	}
 	public void SetSceneActive(){

@@ -24,6 +24,8 @@ public class scr_menuSplashPress : MonoBehaviour {
     {
 #if !isRelease
 		transform.parent.GetChild(2).GetChild(1).gameObject.SetActive(true);
+#else
+		transform.parent.GetChild(2).GetChild(1).gameObject.SetActive(false);
 #endif
 		this.enabled = false;
 	}
