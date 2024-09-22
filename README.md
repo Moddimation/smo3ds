@@ -5,3 +5,5 @@
 Super Mario Odyssey for 3DS, unactive demake of the Switch game for 3DS.
 
 RELEASES: https://github.com/Team8Alpha/smo3ds-builds/releases
+
+DISCORD: https://discord.gg/wMGVfw2bzj
