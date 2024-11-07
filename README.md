@@ -1,5 +1,5 @@
 > [!NOTE]
-> **Development is not "ongoing", but rather "lets fix this line, and next month add this small thing"**.
+> **Development is not "ongoing", but rather "lets fix this line, and in the afterlife add this small thing"**.
 > This will not be finished, it is just updated whenever i feel like it.
 
 > [!WARNING]
@@ -7,6 +7,6 @@
 
 Super Mario Odyssey for 3DS, unactive demake of the Switch game for 3DS.
 
-RELEASES: https://github.com/Team8Alpha/smo3ds-builds/releases
+[OLD RELEASES](https://github.com/Team8Alpha/smo3ds-builds/releases)
 
-DISCORD: https://discord.gg/wMGVfw2bzj
+[DISCORD](https://discord.gg/Mwt9ACAjeZ)
