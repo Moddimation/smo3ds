@@ -9,7 +9,11 @@ public class scr_summon : MonoBehaviour {
 	public static scr_summon s;
 
 	// Use this for initialization
-	void Awake()
+	void Reset()
+	{
+		OnEnable ();
+	}
+	void OnEnable()
 	{
 		s = this;
 		this.enabled = false;

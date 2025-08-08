@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿#if UNITY_EDITOR
+#define isDebug
+#endif
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -23,34 +26,43 @@ public enum eSnd
 	JnWorldIntro2,
 	JnZeldaItem,
 	MarioTitleScream,
-	MoonNearby
-
+	MoonNearby,
 }
 
 public class scr_manAudio : MonoBehaviour {
 
-	AudioSource mAudioSND;
-	AudioSource mAudioBGM;
-	public AudioClip[] listSound;
+	public AudioClip splashAlt;
+	[HideInInspector] public AudioClip[] listSound;
 	public static scr_manAudio s;
+	private AudioSource mAudioSND;
+	private AudioSource mAudioBGM;
 
 	void Awake () {
 		s = this;
 		this.enabled = false;
-		mAudioSND = gameObject.GetComponents<AudioSource>()[0];
-		mAudioBGM = gameObject.GetComponents<AudioSource>()[1];
+		mAudioSND = gameObject.GetComponents<AudioSource>()[1];
+		mAudioBGM = gameObject.GetComponents<AudioSource>()[0];
 
 		listSound = Resources.LoadAll<AudioClip>("Audio/Sounds");
 
 		LoadSND(new eSnd[] {eSnd.JnSuccess}); // GLOBAL AUDIO LOADING LIST.
 
+		#if isDebug
+		PlaySND(eSnd.JnZeldaItem, 1, false);
+		#endif
+
 	}
 
-	public void PlaySND(eSnd eIdSnd, int _volume = 1)
+	public void PlaySND(eSnd eIdSnd, int _volume = 1, bool isOneShot = true)
 	{
 		AudioClip sndClip = GetSND(eIdSnd);
 		mAudioSND.volume = _volume;
-		mAudioSND.PlayOneShot(sndClip);
+		if (isOneShot) mAudioSND.PlayOneShot(sndClip);
+		else
+		{
+			mAudioSND.clip = sndClip;
+			mAudioSND.Play();
+		}
 	}
 	public void PlaySelfSND(ref AudioSource _mAudio, eSnd eIdSnd, bool isLoop = false, bool isOneShot = false, float _volume = 1)
     {

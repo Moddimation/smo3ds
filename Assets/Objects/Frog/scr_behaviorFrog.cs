@@ -58,7 +58,7 @@ public class scr_behaviorFrog : MonoBehaviour {
 		case 6:
 			setAnim ("hackStart", 0.1f);
 			setEyeTexture (1);
-			MarioController.s.SetSpeed (3, 4);
+			MarioController.s.SetSpeed (4, 2f);
 			GetComponent<Collider> ().enabled = false; //REMOVE
 			break;
 		case 7:

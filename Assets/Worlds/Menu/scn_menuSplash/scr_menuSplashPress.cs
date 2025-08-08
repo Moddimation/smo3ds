@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class scr_menuSplashPress : MonoBehaviour {
 
@@ -20,13 +20,13 @@ public class scr_menuSplashPress : MonoBehaviour {
 		scr_main.DPrint ("");
 	}
 
-	void Update()
+	void FixedUpdate()
     {
-#if !isRelease
-		transform.parent.GetChild(2).GetChild(1).gameObject.SetActive(true);
-#else
-		transform.parent.GetChild(2).GetChild(1).gameObject.SetActive(false);
-#endif
+		#if isDebug || UNITY_EDITOR
+			transform.parent.GetChild(2).GetChild(2).gameObject.SetActive(true);
+		#else
+			transform.parent.GetChild(2).GetChild(2).gameObject.SetActive(false);
+		#endif
 		this.enabled = false;
 	}
 
@@ -54,7 +54,13 @@ public class scr_menuSplashPress : MonoBehaviour {
 
     IEnumerator Delay()
 	{
+		int sceneIdx = SceneManager.GetActiveScene ().buildIndex;
 		yield return new WaitForSecondsRealtime(timer);
-		Confirm();
+		while (Time.timeScale <= 0) {
+			yield return null;
+		}
+		if (sceneIdx == SceneManager.GetActiveScene ().buildIndex) {
+			Confirm ();
+		}
 	}
 }

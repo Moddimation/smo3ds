@@ -80,8 +80,7 @@ public class scr_title : MonoBehaviour {
 	{
 		scr_main.s.SetFocus(true);
 		cnv_down.GetChild(2).gameObject.SetActive(true);
-		scr_manButton.s.SetActive(true);
-		EventSystem.current.SetSelectedGameObject(buttonRes);
+		scr_manButton.s.iconSelect.SetActive(true);
 		scr_manAudio.s.PlayBGM("Title");
 		scr_manAudio.s.UnloadSND(eSnd.MarioTitleScream);
 		this.enabled = false;

@@ -30,7 +30,7 @@ public class scr_behaviorCheckpoint : MonoBehaviour {
 
 			} else
 			{
-				//MarioController.s.setAnim (" ");
+				//MarioController.s.SetAnim ("takeCheckpoint", 0.1f, -1, true, true);
 			}
 		}
 	}

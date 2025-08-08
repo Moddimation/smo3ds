@@ -11,7 +11,7 @@ public class scr_behaviorCoin : MonoBehaviour {
 
 	void Start ()
 	{
-		childMesh = transform.GetChild(1).gameObject;
+		childMesh = transform.GetChild(0).gameObject;
 		anim = childMesh.GetComponent<Animator> ();
 		if (currentState == 1)
 		{

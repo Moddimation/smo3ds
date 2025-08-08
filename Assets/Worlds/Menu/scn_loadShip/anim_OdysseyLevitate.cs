@@ -8,6 +8,7 @@ public class anim_OdysseyLevitate : MonoBehaviour {
 	bool isExiting = false;
 	bool hasStarted= false;
 	List<GameObject> rootObjects = new List<GameObject>();
+//	Scene oldScene;
 
 	void Start(){
 		scr_main.s.SetFocus(false);
@@ -16,6 +17,7 @@ public class anim_OdysseyLevitate : MonoBehaviour {
 		{
 			rootObjects.AddRange(SceneManager.GetSceneAt(i).GetRootGameObjects());
 		}
+		//oldScene = SceneManager.GetActiveScene ();
 
 	}
 	// Update is called once per frame
@@ -39,6 +41,7 @@ public class anim_OdysseyLevitate : MonoBehaviour {
 
 			scr_main.s.SetFocus(true);
 			Destroy(transform.parent.gameObject);
+			//SceneManager.UnloadSceneAsync (oldScene);
 		}
 	}
 }

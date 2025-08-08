@@ -115,16 +115,18 @@ public class scrBehaviorCappy : MonoBehaviour
         SetVisible(true);
         switch (myState)
         {
-            case eStateCap.Wait:
-                SetRotate(false);
-                SetVisible(false);
-                SetCollision(false);
+			case eStateCap.Wait:
+				SetRotate (false);
+				SetVisible (false);
+				SetCollision (false);
+				SetPlayerCollide (false);
                 SetAnim("default");
                 break;
             case eStateCap.Throw:
                 switch (mySubState)
                 {
-                    case 0:
+					case 0:
+						SetPlayerCollide (false);
                         string nameAnim = "spinCapStart";
                         if (mario.wasGrounded == false)
                         {
@@ -133,14 +135,15 @@ public class scrBehaviorCappy : MonoBehaviour
                         }
                         SetAnim(nameAnim);
                         SetCollision(false);
-                        mario.SetAnim(nameAnim, 0.03f, 0.3f);
+                        mario.SetAnim(nameAnim, 0.03f, 0.3f, true, true);
                         mario.SetCap(false);
                         mario.SetHand(1, 0, false);
                         mario.SetHand(1, 1, true);
                         transform.position = tMario.position;
                         transform.rotation = tMario.rotation;
                         break;
-                    case 1:
+					case 1:
+						SetPlayerCollide (false);
                         isHacking = false;
                         SetAnim("default");
                         SetRotate(true);
@@ -153,10 +156,12 @@ public class scrBehaviorCappy : MonoBehaviour
                         break;
                 }
                 break;
-            case eStateCap.FlyWait:
+			case eStateCap.FlyWait:
+				SetPlayerCollide (true);
                 SetAnim("stay", 0.2f);
                 break;
-            case eStateCap.Return:
+			case eStateCap.Return:
+				SetPlayerCollide (false);
                 switch (mySubState)
                 {
                     case 0:
@@ -166,7 +171,7 @@ public class scrBehaviorCappy : MonoBehaviour
                     case 1:
                         SetAnim("CatchCap");
                         SetRotate(false);
-                        mario.SetAnim("CatchCap", 0.05f, 1);
+						mario.SetAnim("CatchCap", 0.05f, 1, true, true);
                         if (isHacking)
                         {
                             if (hackedObj.GetComponent<Collider>() != null)
@@ -177,12 +182,14 @@ public class scrBehaviorCappy : MonoBehaviour
                         break;
                 }
                 break;
-            case eStateCap.Hack:
+			case eStateCap.Hack:
+				SetPlayerCollide (false);
                 SetRotate(false);
                 SetAnim("capture");
                 scr_manAudio.s.PlaySelfSND(ref mAudio, eSnd.CappyHacked, false, true);
                 break;
-            case eStateCap.UnHack:
+			case eStateCap.UnHack:
+				SetPlayerCollide (false);
                 SetCollision(false);
                 scr_main.s.capMountPoint = "";
                 SetParent(tMario.parent, false);
@@ -292,4 +299,8 @@ public class scrBehaviorCappy : MonoBehaviour
         scr_main.DPrint("cap: mount at " + collis.gameObject.name + "/" + scr_main.s.capMountPoint);
         isHacking = true;
     }
-}
+	void SetPlayerCollide(bool b)
+	{
+		Physics.IgnoreLayerCollision(scr_main.lyr_player, scr_main.lyr_player, !b);
+	}
+} 

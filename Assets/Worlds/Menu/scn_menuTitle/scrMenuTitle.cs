@@ -14,7 +14,8 @@ public class scrMenuTitle : MonoBehaviour {
 			buttons[i].GetComponent<Button>().onClick.AddListener(delegate { OnButtonPress(i); });
 		}
 		OnMenu();
-		scr_manButton.s.SetActive(false);
+		scr_manButton.s.Active (false);
+		scr_manButton.s.SetButton (0);
     }
 	public void OnMenu()
 	{
@@ -31,9 +32,9 @@ public class scrMenuTitle : MonoBehaviour {
 			case 1:
 				LoadScene("scn_test0");
 				break;
-			/*case 2:
+			case 2:
 				SceneManager.LoadScene("scn_menuConfig", LoadSceneMode.Additive);
-				break;*/
+				break;
 		}
 	}
 	void LoadScene(string name){

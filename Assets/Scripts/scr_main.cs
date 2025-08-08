@@ -1,10 +1,11 @@
-﻿// #define isRelease // UNCOMMENT FOR RELEASING TO THE PUBLIC!
+﻿#define isDebug
 
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class scr_main : MonoBehaviour {
 
@@ -23,9 +24,15 @@ public class scr_main : MonoBehaviour {
 	[HideInInspector] public int nextSpawn = -1; // next index of spawn point
 	[HideInInspector] public string capMountPoint = "missingno"; //used by cap
 	[HideInInspector] public bool hasLevelLoaded = false; //used by level loading and data.
+	[HideInInspector] public bool isPaused = false;
 	
-	public void SetFocus(bool boolean){
-		Time.timeScale=boolean?1:0;
+	public void SetFocus(bool b){
+		Time.timeScale=b?1:0;
+		isPaused = !b;
+		if (scr_manButton.s.ev != null) {
+			scr_manButton.s.ev.enabled = b;
+		}
+		DPrint ("SetFocus("+(b?"true":"false")+")");
 	}
 	public void SetLOD(GameObject coll, bool state)
 	{
@@ -46,7 +53,11 @@ public class scr_main : MonoBehaviour {
 		}
 	}
 
-	void Awake(){
+	void Reset()
+	{
+		OnEnable ();
+	}
+	void OnEnable(){
 		if(s == null)
 		{
 			Debug.ClearDeveloperConsole ();
@@ -73,20 +84,20 @@ public class scr_main : MonoBehaviour {
 		lyr_player = LayerMask.NameToLayer ("Player");
 
 		string authorVersion;
-		#if isRelease
-			authorVersion = "SMO3DS a" + version; //TODO: maybe make this some compiling #if, to save resources at runtime?
-		#else
+		#if isDebug
 			authorVersion = "SMO3DS pre-a" + version;
+		#else
+			authorVersion = "SMO3DS a" + version;
 		#endif
 		transform.GetChild (1).GetChild (0).GetComponent<Text> ().text = authorVersion;
 	}
 
-	#if isRelease
-	public static void DPrint(string text, bool isEditorOut = true){ }
-	#else
-	public static void DPrint(string text, bool isEditorOut = true){
+	#if isDebug
+		public static void DPrint(string text, bool isEditorOut = true){
 		if(scr_devMenu.txt_cmdOut != null) scr_devMenu.txt_cmdOut = text;
 		if(isEditorOut && text != "") Debug.Log (text);
-	}
+		}
+	#else
+		public static void DPrint(string text, bool isEditorOut = true){ }
 	#endif
 }

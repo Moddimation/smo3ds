@@ -12,6 +12,7 @@ public class scr_manButton : MonoBehaviour
 	public GameObject buttonPrevMan;
 	public static scr_manButton s;
 	public GameObject iconSelect;//cappy icon
+	public EventSystem ev;
 
 	private int currentButton = 0; //number of current button
 	private bool buttonPressed = false; //if it was pressed once, it has to be 0 to be able to be pressed again, so it wont just go party with the buttons.
@@ -25,45 +26,43 @@ public class scr_manButton : MonoBehaviour
 		posOffsetSel = lposOffsetSel;
 		currentButton = firstSelectPos;
 		iconSelect.SetActive(true);
-		this.enabled = true;
 		setPosition(buttons[currentButton].transform.position);
+		ev.firstSelectedGameObject = buttons [currentButton];
 	}
-	public void SetActive(bool boolean)
+	public void Active(bool b)
     {
-		this.enabled = boolean;
-        if (boolean)
-        {
-			setPosition(buttons[currentButton].transform.position);
-		}
-		iconSelect.SetActive(boolean);
+        if (b) setPosition(buttons[currentButton].transform.position);
+		iconSelect.SetActive(b);
 	}
 	public void SwitchPrevMenu()
     {
 		if(buttonPrevMan == null) buttonPrevMan.SendMessage("OnMenu");
-		else SetActive(false);
+		else Active(false);
+	}
+	public void SetButton(int index)
+	{
+		currentButton = index;
+		setPosition(buttons[currentButton].transform.position);
 	}
 
 	void setPosition(Vector3 position)
 	{
 		iconSelect.transform.position = new Vector3(posOffsetSel.x + position.x - buttons[currentButton].GetComponent<RectTransform>().rect.width/2, posOffsetSel.y + position.y, -300);
-		EventSystem.current.SetSelectedGameObject(buttons[currentButton]);
+		if(EventSystem.current != null)
+			EventSystem.current.SetSelectedGameObject(buttons[currentButton]);
 	}
 
-	void Start()
+	void Awake()
 	{
 		iconSelect = transform.GetChild(3).gameObject;
+		ev = GetComponent<EventSystem> ();
 		s = this;
-		this.enabled = false;
-		SceneManager.sceneLoaded += OnSceneLoaded;
-	}
-	void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-	{
 		iconSelect.SetActive(false);
 	}
 
-	void Update()
+	void FixedUpdate()
 	{
-		if (Time.timeScale > 0)
+		if ((Time.timeScale > 0) && (buttons.Length > 0))
 		{
 #if UNITY_EDITOR
 			float h = Input.GetAxisRaw("Vertical");
@@ -93,7 +92,7 @@ public class scr_manButton : MonoBehaviour
 			if (buttonOK)
 			{
 				buttonMan.SendMessage("OnButtonPress", currentButton);
-				SetActive(false);
+				Active(false);
 			}
 		}
 	}

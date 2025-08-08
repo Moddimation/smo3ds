@@ -370,13 +370,14 @@ public static class BuildCommand
             ? string.Join(", ", scenes.Select(x => Path.GetFileNameWithoutExtension(x)).ToArray())
             : string.Join(", ", scenes.Take(trimTo).Select(x => Path.GetFileNameWithoutExtension(x)).ToArray()) + "... +" + (scenes.Length - 10) + " more.";
 
-        var message = string.Format(
+       var message = string.Format(
             "Scenes: {0}\n"
             + "Build Target: {1}\n"
             + "Build Path: {2}",
             displayScenes,
             buildTarget,
             buildPath);
+		UnityWriteLine (message);
 
         DoBuild(scenes, buildPath, buildTarget);
 

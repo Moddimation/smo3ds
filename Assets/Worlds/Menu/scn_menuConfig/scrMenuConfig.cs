@@ -14,7 +14,7 @@ public class scrMenuConfig : MonoBehaviour
 	public void OnMenu()
 	{
 		scr_manButton.s.SetMenu(buttons, gameObject, 0, new Vector2(0, 0));
-		scr_manButton.s.SetActive(true);
+		scr_manButton.s.Active(true);
 	}
 
 	public void OnButtonPress(int button)

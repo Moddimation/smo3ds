@@ -77,6 +77,8 @@ namespace LocalizationWizard {
 
 			defColor = GUI.color;
 			defBackgroundColor = GUI.backgroundColor;
+			Color temp = defBackgroundColor;
+			defBackgroundColor = temp;
 		}
 
 		protected virtual void OnDisable() {

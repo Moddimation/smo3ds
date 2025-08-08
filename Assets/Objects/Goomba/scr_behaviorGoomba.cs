@@ -94,7 +94,7 @@ public class scr_behaviorGoomba : MonoBehaviour {
 			setEye(0);
 			setEyeTexture (1);
 			transform.GetChild (1).GetChild (2).gameObject.SetActive (false);
-			MarioController.s.SetSpeed (3, 4);
+			MarioController.s.SetSpeed (4, 0.7f);
 			break;
 		case 7:
 			setAnim ("hackEnd", 0.1f);
@@ -168,11 +168,11 @@ public class scr_behaviorGoomba : MonoBehaviour {
 		MarioController.s.cappy.SetTransformOffset(1.5f, Vector3.zero, Vector3.zero);
 	}
 	public void OnSensorEnter(Collider col){
-		if (col.name == "mario" && isMoving && !dead)
+		if (col.name == "mario" && isMoving && !dead && !MarioController.s.cappy.isHacking)
 			SetState (3); 
 	}
 	public void OnSensorExit(Collider col){
-		if (col.name == "mario" && isMoving && !dead)
+		if (col.name == "mario" && isMoving && !dead && !MarioController.s.cappy.isHacking)
 			SetState (0);
 	}
 

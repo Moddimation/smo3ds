@@ -50,7 +50,6 @@ public class MarioCam : MonoBehaviour {
 	void Awake() {
 		target = transform; // Set the camera parent to the script's transform
 		player = MarioController.s.gameObject;
-		actualCamera = target.GetChild(0); // Assuming the camera is the first child of target
 		cursorX = 0.0f; cursorY = 0.0f;
 		Cursor.lockState = CursorLockMode.Locked; // Lock the cursor to the center of the screen
 		Cursor.visible = false; // Hide the cursor

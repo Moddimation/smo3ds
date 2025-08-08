@@ -85,7 +85,7 @@ public class MarioEvent : MonoBehaviour
                 {
                     case 0:
                         fVar0 = Time.time;
-                        mario.SetAnim("captureFly");
+						mario.SetAnim("captureFly", -1, -1, true, true);
                         mario.isHacking = true;
                         mario.enabled = false;
                         cappy.hackedObj.GetComponent<Rigidbody>().isKinematic = true;
@@ -134,7 +134,7 @@ public class MarioEvent : MonoBehaviour
                         MarioCam.s.confIsWallBlock = false;
                         MarioCam.s.SetTransPl(true);
 
-                        mario.SetAnim("demoShineGet");
+						mario.SetAnim("demoShineGet", 0, -1, true, true);
                         if (mario.isHacking)
                         {
                             mario.SetVisible(true);
